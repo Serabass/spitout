@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+var opt = require('node-getopt').create([
+		[ '', 'encoding[=utf-8]', 'file read encoding' ],
+		[ 'h', 'help', 'display this help' ],
+	])
+	.bindHelp()
+	.parseSystem()
+;
+
+if (opt.options.encoding === void 0 || opt.options.encoding === 'utf-8') {
+	opt.options.encoding = 'utf8';
+}
+
+var spit = require('../lib/spitout');
+
+if (opt.argv.length > 0) {
+	spit(opt.argv[0], opt.options.encoding, function (err, contents) {
+		if (err)
+			throw err;
+		
+		console.log(contents);
+	});
+}

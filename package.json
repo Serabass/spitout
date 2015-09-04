@@ -1,0 +1,30 @@
+{
+  "name": "spitout",
+  "version": "1.0.0",
+  "description": "A small CLI tool that prints contents of passed file and then removes it",
+  "main": "lib/spitout.js",
+  "bin": {
+    "spit": "./bin/spit"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Serabass/spitout"
+  },
+  "keywords": [
+    "fs",
+    "remove",
+    "print"
+  ],
+  "author": "Serabass",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Serabass/spitout/issues"
+  },
+  "homepage": "https://github.com/Serabass/spitout",
+  "dependencies": {
+    "node-getopt": "^0.2.3"
+  }
+}
