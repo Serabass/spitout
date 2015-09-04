@@ -1,6 +1,6 @@
 {
   "name": "spitout",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A small CLI tool that prints contents of passed file and then removes it",
   "main": "lib/spitout.js",
   "bin": {
